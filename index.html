@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Червоний Горизонт</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Колонізація Марсу</h1>
+
+    <div class="level-message" id="levelMessage">
+    Пройдіть попередні етапи для відкриття цього рівня
+</div>
+    <div class="image-frame">
+
+        <button class="star-button button-1">➀</button>
+        <button class="star-button button-2">➁</button>
+        <button class="star-button button-3">➂</button>
+        <button class="star-button button-4">➃</button>
+        <button class="star-button button-5">➄</button>
+
+        <img src="1.png" alt="Марс">
+
+    </div>
+
+    <!-- Вікно тесту -->
+    <div class="quiz-modal" id="quizModal">
+
+        <div class="quiz-box">
+
+            <div class="quiz-top">
+                <span>Час: <span id="timer">20</span></span>
+                <span>Бали: <span id="score">0</span></span>
+            </div>
+
+            <div class="question" id="question">
+                Тут буде текст питання
+            </div>
+
+            <div class="answers">
+
+                <button class="answer-btn">Відповідь 1</button>
+                <button class="answer-btn">Відповідь 2</button>
+                <button class="answer-btn">Відповідь 3</button>
+                <button class="answer-btn">Відповідь 4</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Вікно результатів -->
+    <div class="result-modal" id="resultModal">
+
+        <div class="result-box">
+
+            <div class="result-title" id="resultTitle">
+                Тест завершено
+            </div>
+
+            <div class="result-score" id="resultScore">
+                Ваш результат: 0/5
+            </div>
+
+            <div class="result-buttons" id="resultButtons">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
